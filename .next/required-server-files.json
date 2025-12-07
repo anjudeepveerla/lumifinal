@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\ANJUDEEP VEERLA",
+    "outputFileTracingRoot": "C:\\Projects\\lumiai",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -289,12 +289,12 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "C:\\Users\\ANJUDEEP VEERLA"
+      "root": "C:\\Projects\\lumiai"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\ANJUDEEP VEERLA\\OneDrive\\Desktop\\LAI\\lumiai",
-  "relativeAppDir": "OneDrive\\Desktop\\LAI\\lumiai",
+  "appDir": "C:\\Projects\\lumiai",
+  "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",
     ".next\\server\\pages-manifest.json",
