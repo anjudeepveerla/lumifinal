@@ -21,14 +21,16 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: "VEERLA ANJUDEEP",
     role: "AI Engineer",
-    story: "4+ years of experience in building AI chatbots, voice agents, and websites. AI Superstack Mentor.",
+    story: "4+ years of experience in building AI chatbots, voice agents, and websites.",
+    image: "/anju.png",
     linkedin: "https://linkedin.com/in/username",
   },
   {
     id: 2,
     name: "BOMMAKANTI MANEESH",
     role: "AI Engineer",
-    story: "AI Creator, No-code/Low-code Developer, R&D AI Specialist, and AI Superstack Mentor.",
+    story: "AI Creator, No-code/Low-code Developer, R&D AI Specialist.",
+    image: "/maneesh.png",
     linkedin: "https://linkedin.com/in/username",
     instagram: "https://instagram.com/username",
   },
@@ -37,6 +39,7 @@ const teamMembers: TeamMember[] = [
     name: "VIKAS CHARY ALWALA",
     role: "Gen AI Specialist",
     story: "Experienced technology professional with expertise in software development and innovation",
+    image: "/vikas.png",
     linkedin: "https://linkedin.com/in/username",
   },
   {
@@ -44,12 +47,14 @@ const teamMembers: TeamMember[] = [
     name: "UDAY",
     role: "Senior Software Engineer / AI Engineer",
     story: "11+ years of experience in AI, cloud, and enterprise systems. Expert in AI agents, LLMOps, multimodal applications, and GPU-optimized AI workflows.",
+    image: "/uday.JPG",
     linkedin: "https://linkedin.com/in/username",
   },
   {
     id: 5,
     name: "SANTOSH KOTA",
     role: "Team Member",
+    image: "kota.png",
     story: "Contributing to building innovative AI automation solutions.",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -154,7 +159,7 @@ export default function TeamSection() {
                     </div>
 
                     {/* Story text */}
-                    <p className="text-sm text-zinc-300 leading-relaxed flex-1">
+                    <p className="text-sm text-zinc-300 leading-relaxed flex-1 min-h-[96px]">
                       {member.story}
                     </p>
 
