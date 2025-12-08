@@ -63,7 +63,7 @@ export default function Home() {
       {/* Desktop Header */}
       <header
         className={`sticky top-4 z-[9999] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-background/80 md:flex backdrop-blur-sm border border-border/50 shadow-lg transition-all duration-300 ${
-          isScrolled ? "max-w-3xl px-2" : "max-w-5xl px-4"
+          isScrolled ? "max-w-4xl px-3" : "max-w-5xl px-4"
         } py-2`}
         style={{
           willChange: "transform",
@@ -83,7 +83,7 @@ export default function Home() {
           </span>
         </a>
 
-        <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-muted-foreground transition duration-200 hover:text-foreground md:flex md:space-x-2">
+        <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-6 text-sm font-medium text-muted-foreground transition duration-200 hover:text-foreground md:flex">
           <a
             className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             onClick={(e) => {
@@ -273,8 +273,29 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Automation Playground Section */}
-      <AutomationPlayground />
+      {/* Automation Playground Section (hidden on mobile) */}
+      <div className="hidden md:block">
+        <AutomationPlayground />
+      </div>
+
+      {/* Countries We Work - mobile only quick view */}
+      <div className="block md:hidden px-6 mt-10">
+        <div className="rounded-2xl border border-border/50 bg-background/50 backdrop-blur-sm p-5 shadow-lg">
+          <h3 className="text-lg font-semibold text-white mb-3">Countries we work</h3>
+          <div className="flex flex-wrap gap-2">
+            {["India", "UAE", "Australia", "New Zealand", "USA", "UK", "Germany", "Saudi Arabia", "Sri Lanka"].map(
+              (country) => (
+                <span
+                  key={country}
+                  className="px-3 py-1 rounded-full bg-white/10 border border-white/10 text-sm text-white/90"
+                >
+                  {country}
+                </span>
+              ),
+            )}
+          </div>
+        </div>
+      </div>
 
       {/* Capabilities Section */}
       <CapabilitiesSection />

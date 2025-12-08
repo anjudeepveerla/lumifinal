@@ -245,13 +245,13 @@ export function AutomationPlayground() {
                 repeatType: "loop",
               }
             } else if (isCurrent && isAnimating) {
-              // During flow: electric blue pulse on the current node
+              // During flow: bright white pulse on the current node
               animateProps = {
                 scale: [1, 1.07, 1],
                 boxShadow: [
-                  "0 0 0 rgba(56,189,248,0.0)",
-                  "0 0 36px rgba(56,189,248,0.98)",
-                  "0 0 18px rgba(56,189,248,0.7)",
+                  "0 0 0 rgba(255,255,255,0.0)",
+                  "0 0 44px rgba(255,255,255,0.95)",
+                  "0 0 22px rgba(255,255,255,0.75)",
                 ],
               }
               transitionProps = {
@@ -259,10 +259,10 @@ export function AutomationPlayground() {
                 ease: "easeInOut",
               }
             } else if (isActive) {
-              // Nodes already hit by the surge: keep a stable electric blue glow
+              // Nodes already hit by the surge: keep a stable white glow
               animateProps = {
                 scale: 1,
-                boxShadow: "0 0 20px rgba(56,189,248,0.7)",
+                boxShadow: "0 0 22px rgba(255,255,255,0.7)",
               }
               transitionProps = {
                 duration: 0.4,
@@ -272,7 +272,7 @@ export function AutomationPlayground() {
               // Idle nodes
               animateProps = {
                 scale: 1,
-                boxShadow: "0 0 6px rgba(15,23,42,0.8)",
+                boxShadow: "0 0 10px rgba(255,255,255,0.25)",
               }
               transitionProps = {
                 duration: 0.3,

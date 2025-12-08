@@ -22,19 +22,6 @@ export default function Hero() {
       <section className="relative overflow-hidden min-h-screen flex flex-col">
         <div className="container mx-auto px-4 py-24 sm:py-32 relative z-10 flex-1 flex flex-col">
           <div className="mx-auto max-w-4xl text-center flex-1 flex flex-col justify-center">
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mb-8"
-            >
-              <Badge variant="secondary" className="inline-flex items-center gap-2 px-4 py-2 text-sm">
-                <Sparkles className="h-4 w-4" />
-                Where AI Meets Creative Minds
-              </Badge>
-            </motion.div>
-
             {/* Main Heading */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -143,48 +130,26 @@ export default function Hero() {
             <div className="text-center">
               <p className="text-sm text-muted-foreground mb-6">Powered by leading AI & automation technologies</p>
               <div className="relative overflow-hidden">
-                <Marquee pauseOnHover className="[--duration:20s]" repeat={3}>
-                  {/* OpenAI Logo */}
-                  <div className="opacity-80 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(116,220,204,0.6)] transition-all duration-300 mx-4">
-                    <div className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
-                      <img src="/hero_icons/openai.png" alt="OpenAI" className="h-full w-full object-contain" />
+                <Marquee pauseOnHover className="[--duration:22s]" repeat={3}>
+                  {[
+                    { src: "/hero_icons/botpress.png", alt: "Botpress", glow: "rgba(90,70,255,0.6)" },
+                    { src: "/hero_icons/firebase.png", alt: "Firebase", glow: "rgba(255,183,77,0.65)" },
+                    { src: "/hero_icons/langschain.png", alt: "LangChain", glow: "rgba(72,187,120,0.6)" },
+                    { src: "/hero_icons/langgraph.png", alt: "LangGraph", glow: "rgba(109,83,255,0.6)" },
+                    { src: "/hero_icons/robo.png", alt: "Robomotion", glow: "rgba(255,99,71,0.6)" },
+                    { src: "/hero_icons/supabase.png", alt: "Supabase", glow: "rgba(16,185,129,0.6)" },
+                    { src: "/hero_icons/vercel.png", alt: "Vercel", glow: "rgba(255,255,255,0.45)" },
+                    { src: "/hero_icons/zapier.png", alt: "Zapier", glow: "rgba(255,102,0,0.6)" },
+                  ].map((logo) => (
+                    <div
+                      key={logo.src}
+                      className={`opacity-80 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_16px_${logo.glow}] transition-all duration-300 mx-5`}
+                    >
+                      <div className="h-18 w-18 min-h-[4.5rem] min-w-[4.5rem] rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center p-3 border border-white/10">
+                        <img src={logo.src} alt={logo.alt} className="h-14 w-14 object-contain rounded-full" />
+                      </div>
                     </div>
-                  </div>
-
-                  {/* Python Logo */}
-                  <div className="opacity-80 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(55,118,171,0.6)] transition-all duration-300 mx-4">
-                    <div className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
-                      <img src="/hero_icons/python.png" alt="Python" className="h-full w-full object-contain" />
-                    </div>
-                  </div>
-
-                  {/* Make.com Logo */}
-                  <div className="opacity-80 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(109,83,255,0.6)] transition-all duration-300 mx-4">
-                    <div className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
-                      <img src="/hero_icons/make.png" alt="Make.com" className="h-full w-full object-contain" />
-                    </div>
-                  </div>
-
-                  {/* N8n Logo */}
-                  <div className="opacity-80 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(234,84,85,0.6)] transition-all duration-300 mx-4">
-                    <div className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
-                      <img src="/hero_icons/n8n.png" alt="N8n" className="h-full w-full object-contain" />
-                    </div>
-                  </div>
-
-                  {/* Twilio Logo */}
-                  <div className="opacity-80 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(244,71,58,0.6)] transition-all duration-300 mx-4">
-                    <div className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
-                      <img src="/hero_icons/twilio.png" alt="Twilio" className="h-full w-full object-contain" />
-                    </div>
-                  </div>
-
-                  {/* Next.js Logo */}
-                  <div className="opacity-80 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)] transition-all duration-300 mx-4">
-                    <div className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
-                      <img src="/hero_icons/nextjs.png" alt="Next.js" className="h-full w-full object-contain" />
-                    </div>
-                  </div>
+                  ))}
                 </Marquee>
               </div>
             </div>

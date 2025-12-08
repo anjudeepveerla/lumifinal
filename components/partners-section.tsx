@@ -14,39 +14,51 @@ interface Partner {
 const partners: Partner[] = [
   {
     id: 1,
-    name: "Snapcaptions",
-    logo: "/partners/snapcaptions.png",
-    description: "AI-powered caption generation",
+    name: "Botpress",
+    logo: "/hero_icons/botpress.png",
+    description: "Conversational AI platform",
   },
   {
     id: 2,
-    name: "Partner 2",
-    logo: "/partners/partner2.png",
-    description: "Technology partner",
+    name: "Firebase",
+    logo: "/hero_icons/firebase.png",
+    description: "Backend and realtime infrastructure",
   },
   {
     id: 3,
-    name: "Vybe School",
-    logo: "/partners/vybeschool.png",
-    description: "EdTech innovation",
+    name: "LangChain",
+    logo: "/hero_icons/langschain.png",
+    description: "LLM orchestration",
   },
   {
     id: 4,
-    name: "AI Lumi",
-    logo: "/partners/ailumi.png",
-    description: "AI solutions",
+    name: "LangGraph",
+    logo: "/hero_icons/langgraph.png",
+    description: "Graph-based AI workflows",
   },
   {
     id: 5,
-    name: "Secret AI",
-    logo: "/partners/secretai.png",
-    description: "AI technology",
+    name: "Robomotion",
+    logo: "/hero_icons/robo.png",
+    description: "RPA and automation",
   },
   {
     id: 6,
-    name: "Creator Connect",
-    logo: "/partners/creatorconnect.png",
-    description: "Creator platform",
+    name: "Supabase",
+    logo: "/hero_icons/supabase.png",
+    description: "Open source backend",
+  },
+  {
+    id: 7,
+    name: "Vercel",
+    logo: "/hero_icons/vercel.png",
+    description: "Edge hosting",
+  },
+  {
+    id: 8,
+    name: "Zapier",
+    logo: "/hero_icons/zapier.png",
+    description: "No-code integrations",
   },
 ]
 
@@ -160,18 +172,16 @@ export default function PartnersSection() {
                   }}
                 />
 
-                {/* Logo Container */}
+                {/* Logo Container removed; showing name badge only */}
                 <div className="relative z-10 h-full flex items-center justify-center p-6">
                   <motion.div
                     className="w-full h-full flex items-center justify-center"
-                    whileHover={{ scale: 1.1 }}
+                    whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <img
-                      src={partner.logo}
-                      alt={partner.name}
-                      className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-100 transition-all duration-500"
-                    />
+                    <div className="h-20 w-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 shadow-[0_0_12px_rgba(0,0,0,0.25)] flex items-center justify-center text-white font-semibold text-lg">
+                      {partner.name.slice(0, 2).toUpperCase()}
+                    </div>
                   </motion.div>
                 </div>
 

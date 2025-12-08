@@ -27,7 +27,7 @@ const allWorksData: Work[] = [
     tools: ["Python", "N8n", "Reddit API"],
     description:
       "Automated 80% of manual research workflow and increased Reddit engagement by ~45%. Comments are context-aware, natural, and insightful.",
-    image: "/works/reddit-project.svg",
+    image: "/reddit.webp",
     isVideo: false,
   },
   {
@@ -49,7 +49,7 @@ const allWorksData: Work[] = [
     tools: ["N8n", "Google Calendar API", "Twilio SMS"],
     description:
       "Nearly 0% missed appointments and fully automated daily scheduling including prayer times.",
-    image: "/works/reminder-ai-project.svg",
+    image: "/pa.jpg",
     isVideo: false,
   },
   {
