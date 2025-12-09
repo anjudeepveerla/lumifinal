@@ -14,51 +14,43 @@ interface Partner {
 const partners: Partner[] = [
   {
     id: 1,
-    name: "Botpress",
-    logo: "/hero_icons/botpress.png",
-    description: "Conversational AI platform",
+    name: "CITS",
+    logo: "/trusted/cits.png",
   },
   {
     id: 2,
-    name: "Firebase",
-    logo: "/hero_icons/firebase.png",
-    description: "Backend and realtime infrastructure",
+    name: "Gyantv",
+    logo: "/trusted/gyantv.png",
   },
   {
     id: 3,
-    name: "LangChain",
-    logo: "/hero_icons/langschain.png",
-    description: "LLM orchestration",
+    name: "Higgsfield",
+    logo: "/trusted/higgsfield.png",
   },
   {
     id: 4,
-    name: "LangGraph",
-    logo: "/hero_icons/langgraph.png",
-    description: "Graph-based AI workflows",
+    name: "Imagine Art",
+    logo: "/trusted/imagineart.png",
   },
   {
     id: 5,
-    name: "Robomotion",
-    logo: "/hero_icons/robo.png",
-    description: "RPA and automation",
+    name: "LUMI AI",
+    logo: "/trusted/lumiai.png",
   },
   {
     id: 6,
-    name: "Supabase",
-    logo: "/hero_icons/supabase.png",
-    description: "Open source backend",
+    name: "Secret AI",
+    logo: "/trusted/secretai.png",
   },
   {
     id: 7,
-    name: "Vercel",
-    logo: "/hero_icons/vercel.png",
-    description: "Edge hosting",
+    name: "Snapcaptions",
+    logo: "/trusted/snapcaptions.png",
   },
   {
     id: 8,
-    name: "Zapier",
-    logo: "/hero_icons/zapier.png",
-    description: "No-code integrations",
+    name: "VybeSchool",
+    logo: "/trusted/vybeschool.png",
   },
 ]
 
@@ -172,16 +164,21 @@ export default function PartnersSection() {
                   }}
                 />
 
-                {/* Logo Container removed; showing name badge only */}
+                {/* Logo + name */}
                 <div className="relative z-10 h-full flex items-center justify-center p-6">
                   <motion.div
-                    className="w-full h-full flex items-center justify-center"
+                    className="w-full h-full flex flex-col items-center justify-center gap-3"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="h-20 w-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 shadow-[0_0_12px_rgba(0,0,0,0.25)] flex items-center justify-center text-white font-semibold text-lg">
-                      {partner.name.slice(0, 2).toUpperCase()}
+                    <div className="h-20 w-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 shadow-[0_0_12px_rgba(0,0,0,0.25)] flex items-center justify-center overflow-hidden">
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className="h-full w-full object-contain"
+                      />
                     </div>
+                    <p className="text-white/90 text-sm font-medium text-center">{partner.name}</p>
                   </motion.div>
                 </div>
 

@@ -23,7 +23,7 @@ const teamMembers: TeamMember[] = [
     role: "AI Engineer",
     story: "4+ years of experience in building AI chatbots, voice agents, and websites.",
     image: "/anju.png",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/anjudeepveerla/",
   },
   {
     id: 2,
@@ -31,8 +31,7 @@ const teamMembers: TeamMember[] = [
     role: "AI Engineer",
     story: "AI Creator, No-code/Low-code Developer, R&D AI Specialist.",
     image: "/maneesh.png",
-    linkedin: "https://linkedin.com/in/username",
-    instagram: "https://instagram.com/username",
+    linkedin: "https://www.linkedin.com/in/bommakanti-maneesh-0494972b3/",
   },
   {
     id: 3,
@@ -40,7 +39,7 @@ const teamMembers: TeamMember[] = [
     role: "Gen AI Specialist",
     story: "Experienced technology professional with expertise in software development and innovation",
     image: "/vikas.png",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/vikas-chary-alwala-b9a89739a/",
   },
   {
     id: 4,
@@ -48,7 +47,7 @@ const teamMembers: TeamMember[] = [
     role: "Senior Software Engineer / AI Engineer",
     story: "11+ years of experience in AI, cloud, and enterprise systems. Expert in AI agents, LLMOps, multimodal applications, and GPU-optimized AI workflows.",
     image: "/uday.JPG",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/udaykumarkakani/",
   },
   {
     id: 5,
@@ -56,7 +55,7 @@ const teamMembers: TeamMember[] = [
     role: "Team Member",
     image: "kota.png",
     story: "Contributing to building innovative AI automation solutions.",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/kota-santosh-7159a9322/",
   },
 ]
 
